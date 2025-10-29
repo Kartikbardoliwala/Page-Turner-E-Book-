@@ -2,14 +2,14 @@
 Page Turner is a beautifully designed landing page that introduces The Mindful Productivity Method — a structured approach to achieving more while staying calm, balanced, and focused.
 🚀 Features
 
-Responsive and modern landing page
+1.Responsive and modern landing page
 
-Smooth scrolling and interactive sections
+2.Smooth scrolling and interactive sections
 
-Fast-loading and SEO-friendly design
+3.Fast-loading and SEO-friendly design
 
-Integrated Razorpay "Pay Now" button for instant payments
+4.Integrated Razorpay "Pay Now" button for instant payments
 
-Auto-refresh and load animations for better user experience
+5.Auto-refresh and load animations for better user experience
 
-page-turner-pt.netlify.app
+https://page-turner-pt.netlify.app
