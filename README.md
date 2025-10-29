@@ -3,13 +3,13 @@ Page Turner is a beautifully designed landing page that introduces The Mindful P
 
 🚀 Features
 
-1.Responsive and modern landing page
+1.Integrated Razorpay "Pay Now" button for instant payments
 
 2.Smooth scrolling and interactive sections
 
 3.Fast-loading and SEO-friendly design
 
-4.Integrated Razorpay "Pay Now" button for instant payments
+4.Responsive and modern landing page
 
 5.Auto-refresh and load animations for better user experience
 
