@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     <style>
-        /* Your existing CSS styles remain the same */
         * {
             margin: 0;
             padding: 0;
@@ -102,7 +101,6 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
-        /* Hero Section */
         .hero {
             padding: 80px 0;
             background: linear-gradient(to right, #f5f7ff, #e8edff);
@@ -182,8 +180,6 @@
             font-weight: 600;
             margin-left: 15px;
         }
-
-        /* Features Section */
         .features {
             padding: 80px 0;
             background: white;
@@ -230,7 +226,6 @@
             color: var(--primary-dark);
         }
 
-        /* Testimonials */
         .testimonials {
             padding: 80px 0;
             background: linear-gradient(to right, #f5f7ff, #e8edff);
@@ -284,7 +279,6 @@
             font-size: 0.9rem;
         }
 
-        /* FAQ Section */
         .faq {
             padding: 80px 0;
             background: white;
@@ -324,7 +318,6 @@
             max-height: 200px;
         }
 
-        /* CTA Section */
         .cta {
             padding: 80px 0;
             background: linear-gradient(135deg, var(--primary), var(--primary-dark));
@@ -349,8 +342,6 @@
             font-size: 1.2rem;
             padding: 15px 40px;
         }
-
-        /* Footer */
         footer {
             background: var(--dark);
             color: white;
@@ -393,7 +384,6 @@
             color: var(--secondary);
         }
 
-        /* Modal Styles */
         .modal {
             display: none;
             position: fixed;
@@ -544,7 +534,6 @@
             background: #ff7849;
         }
 
-        /* Loading spinner */
         .spinner {
             display: none;
             width: 40px;
@@ -561,7 +550,6 @@
             100% { transform: rotate(360deg); }
         }
 
-        /* Responsive Design */
         @media (max-width: 992px) {
             .hero-content {
                 flex-direction: column;
@@ -608,8 +596,6 @@
     </style>
 </head>
 <body>
-    
-    <!-- Header -->
     <header>
         <div class="container">
             <nav>
@@ -627,7 +613,6 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-content">
@@ -650,8 +635,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Features Section -->
     <section class="features" id="features">
         <div class="container">
             <div class="section-title">
@@ -680,8 +663,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Testimonials Section -->
     <section class="testimonials" id="testimonials">
         <div class="container">
             <div class="section-title">
@@ -731,8 +712,6 @@
             </div>
         </div>
     </section>
-
-    <!-- FAQ Section -->
     <section class="faq" id="faq">
         <div class="container">
             <div class="section-title">
@@ -804,8 +783,6 @@
             </div>
         </div>
     </section>
-
-    <!-- CTA Section -->
     <section class="cta">
         <div class="container">
             <h2>Transform Your Productivity Today</h2>
@@ -813,8 +790,6 @@
             <a href="#" class="btn buy-now-btn">Buy Now <i class="fas fa-arrow-right"></i></a>
         </div>
     </section>
-
-    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="logo">
@@ -833,8 +808,6 @@
             <p>&copy; 2025 EmotionalFreedom. All rights reserved.</p>
         </div>
     </footer>
-
-    <!-- Modal -->
     <div class="modal" id="buyNowModal">
         <div class="modal-content">
             <div class="modal-header">
@@ -940,8 +913,6 @@
         rzp.open();
         e.preventDefault();
     }
-
-        // Modal functionality
         const modal = document.getElementById('buyNowModal');
         const buyNowButtons = document.querySelectorAll('.buy-now-btn');
         const closeModal = document.querySelector('.close-modal');
@@ -950,41 +921,25 @@
         const paymentSpinner = document.getElementById('paymentSpinner');
         
         let selectedLanguage = 'english';
-        
-        // Open modal when Buy Now buttons are clicked
         buyNowButtons.forEach(button => {
             button.addEventListener('click', (e) => {
                 e.preventDefault();
                 modal.style.display = 'flex';
             });
         });
-        
-        // Close modal when X is clicked
+
         closeModal.addEventListener('click', () => {
             modal.style.display = 'none';
         });
-        
-        // Close modal when clicking outside the modal content
         window.addEventListener('click', (e) => {
             if (e.target === modal) {
                 modal.style.display = 'none';
             }
         });
         
-        // Language selection
-        languageOptions.forEach(option => {
-            option.addEventListener('click', () => {
-                // Remove selected class from all options
-                languageOptions.forEach(opt => opt.classList.remove('selected'));
-                // Add selected class to clicked option
-                option.classList.add('selected');
-                // Update selected language
-                selectedLanguage = option.getAttribute('data-lang');
-            });
-        });
-        
         
     </script>
 
 </body>
+
 </html>
